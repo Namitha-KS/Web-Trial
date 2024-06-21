@@ -1,0 +1,35 @@
+<!-- women.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Section - Shoe Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div class="container">
+        <h1>Women's Shoes</h1>
+        <div id="women-products" class="product-list"></div>
+    </div>
+    <script>
+        import { womenData } from './js/data.js';
+        const womenProductsContainer = document.getElementById('women-products');
+        womenData.forEach(product => {
+            const productElement = document.createElement('div');
+            productElement.className = 'product';
+            productElement.innerHTML = `
+                <img src="${product.img}" alt="${product.title}">
+                <h3>${product.title}</h3>
+                <p>${product.reviews}</p>
+                <p>Was: <s>${product.prevPrice}</s></p>
+                <p>Now: $${product.newPrice}</p>
+                <button>Add to Cart</button>
+            `;
+            womenProductsContainer.appendChild(productElement);
+        });
+    </script>
+</body>
+</html>
