@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 300px;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    .card-body {
+      padding: 15px;
+    }
+    .card-title {
+      font-size: 18px;
+      margin: 0 0 10px;
+    }
+    .card-details {
+      color: #888;
+      margin-bottom: 15px;
+    }
+    .card-reviews {
+      color: #888;
+      margin-bottom: 10px;
+    }
+    .card-price {
+      color: #333;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0;
+    }
+    .card-prev-price {
+      text-decoration: line-through;
+      color: #999;
+      font-size: 16px;
+    }
+    .rating-star {
+      color: gold;
+    }
+    .add-to-cart {
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .add-to-cart:hover {
+      background-color: #218838;
+    }
+    #newNav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+#newNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  justify-content: flex-end; 
+}
+
+#newNav ul li {
+  margin: 0 10px; 
+}
+
+#newNav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+#newNav ul li a:hover {
+  background-color: #555;
+}
+
+
+.navTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navBottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.copyRight {
+  color: lightgray;
+}
+  </style>
+</head>
+<body>
+    <nav id="newNav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">Cart</a></li>
+        </ul>
+    </nav>
+    <!-- <footer>
+      <div>
+          <span class="copyright">&copy; Made by Namitha. All rights reserved. 2024</span>
+      </div>
+  </footer> -->
+  <h1>Shoe Collection</h1>
+  <div class="container">
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg" alt="Nike Air Monarch IV">
+      <div class="card-body">
+        <h2 class="card-title">Nike Air Monarch IV</h2>
+        <div class="card-details">Nike - Sneakers - White</div>
+        <div class="card-reviews"><span class="rating-star">&#9733;</span> (123 reviews)</div>
+        <div class="card-price">$200.00</div>
+        <div class="card-prev-price">$140.00</div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg" alt="Nike Air Vapormax Plus">
+      <div class="card-body">
+        <h2 class="card-title">Nike Air Vapormax Plus</h2>
+        <div class="card-details">Nike - Sneakers - Red</div>
+        <div class="card-reviews"><span class="rating-star">&#9733;</span> (123 reviews)</div>
+        <div class="card-price">$200.00</div>
+        <div class="card-prev-price">$140.00</div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/51+P9uAvb1L._AC_UY695_.jpg" alt="Nike Waffle One Sneaker">
+      <div class="card-body">
+        <h2 class="card-title">Nike Waffle One Sneaker</h2>
+        <div class="card-details">Nike - Sneakers - Green</div>
+        <div class="card-reviews"><span class="rating-star">&#9733;</span> (123 reviews)</div>
+        <div class="card-price">$200.00</div>
+        <div class="card-prev-price">$140.00</div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71oEKkghg-L._AC_UX575_.jpg" alt="Nike Running Shoe">
+      <div class="card-body">
+        <h2 class="card-title">Nike Running Shoe</h2>
+        <div class="card-details">Adidas - Sneakers - Black</div>
+        <div class="card-reviews"><span class="rating-star">&#9733;</span> (123 reviews)</div>
+        <div class="card-price">$200.00</div>
+        <div class="card-prev-price">$140.00</div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/41M54ztS6IL._AC_SY625._SX._UX._SY._UY_.jpg" alt="Flat Slip On Pumps">
+      <div class="card-body">
+        <h2 class="card-title">Flat Slip On Pumps</h2>
+        <div class="card-details">Vans - Flats - Green</div>
+        <div class="card-reviews"><span class="rating-star">&#9733;</span> (123 reviews)</div>
+        <div class="card-price">$200.00</div>
+        <div class="card-prev-price">$140.00</div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71zKuNICJAL._AC_UX625_.jpg" alt="Knit Ballet Flat">
+      <div class="card-body">
+        <h2 class="card-title">Knit Ballet Flat</h2>
+        <div class="card-details">Adidas - Flats - Black</div>
+        <div class="card-reviews"><span class="rating-star">&#9733;</span> (123 reviews)</div>
+        <div class="card-price">$50.00</div>
+        <div class="card-prev-price">$140.00</div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/61V9APfz97L._AC_UY695_.jpg" alt="Loafer Flats">
+      <div class="card-body">
+        <h2 class="card-title">Loafer Flats</h2>
+        <div class="card-details">Vans - Flats - White</div>
+        <div class="card-reviews"><span class="rating-star">&#9733;</span> (123 reviews)</div>
+        <div class="card-price">$50.00</div>
+        <div class="card-prev-price">$140.00</div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71VaQ+V6XnL._AC_UY695_.jpg" alt="Nike Zoom Freak">
+      <div class="card-body">
+        <h2 class="card-title">Nike Zoom Freak</h2>
+        <div class="card-details">Nike - Sneakers - Green</div>
+        <div class="card-reviews"><span class="rating-star">&#9733;</span> (123 reviews)</div>
+        <div class="card-price">$200.00</div>
+        <div class="card-prev-price">$140.00</div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/61-cBsLhJHL._AC_UY695_.jpg" alt="Nike Men's Sneaker">
+      <div class="card-body">
+        <h2 class="card-title">Nike Men's Sneaker</h2>
+        <div class="card-details">Adidas - Sneakers - Blue</div>
+        <div class="card-reviews"><span class="rating-star">&#9733;</span> (123 reviews)</div>
+        <div class="card-price">$200.00</div>
+        <div class="card-prev-price">$140.00</div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jpg" alt="PUMA BLACK-OCE">
+      <div class="card-body">
+        <h2 class="card-title">PUMA BLACK-OCE</h2>
+        <div class="card-details">Nike - Sneakers - White</div>
+        <div class="card-reviews"><span class="rating-star">&#9733;</span> (123 reviews)</div>
+        <div class="card-price">$200.00</div>
+        <div class="card-prev-price">$140.00</div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="navTop">
+            <div class="limitedOffer">Limited Offer</div>
+            <div class="search">
+                <input type="text" class="searchInput" placeholder="Search...">
+                <img src="./img/search.png" class="searchIcon" alt="Search Icon">
+            </div>
+        </div>
+        <div class="navBottom">
+            <div class="menuItem">Air Force</div>
+            <div class="menuItem">Air Jordan</div>
+            <div class="menuItem">Blazer</div>
+            <div class="menuItem">Crater</div>
+            <div class="menuItem">Hippie</div>
+        </div>
+    </nav>
+
+    <!-- Slider -->
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <div class="sliderBgCircle"></div>
+                <img src="./img/air.png" class="sliderImage" alt="Air Force">
+                <h1 class="sliderTitle">Air Force</h1>
+                <h2 class="sliderPrice">$119</h2>
+                <button class="buyButton">Buy Now</button>
+            </div>
+            <div class="sliderItem">
+                <div class="sliderBgCircle"></div>
+                <img src="./img/jordan.png" class="sliderImage" alt="Air Jordan">
+                <h1 class="sliderTitle">Air Jordan</h1>
+                <h2 class="sliderPrice">$149</h2>
+                <button class="buyButton">Buy Now</button>
+            </div>
+            <div class="sliderItem">
+                <div class="sliderBgCircle"></div>
+                <img src="./img/blazer.png" class="sliderImage" alt="Blazer">
+                <h1 class="sliderTitle">Blazer</h1>
+                <h2 class="sliderPrice">$109</h2>
+                <button class="buyButton">Buy Now</button>
+            </div>
+            <div class="sliderItem">
+                <div class="sliderBgCircle"></div>
+                <img src="./img/crater.png" class="sliderImage" alt="Crater">
+                <h1 class="sliderTitle">Crater</h1>
+                <h2 class="sliderPrice">$129</h2>
+                <button class="buyButton">Buy Now</button>
+            </div>
+            <div class="sliderItem">
+                <div class="sliderBgCircle"></div>
+                <img src="./img/hippie.png" class="sliderImage" alt="Hippie">
+                <h1 class="sliderTitle">Hippie</h1>
+                <h2 class="sliderPrice">$99</h2>
+                <button class="buyButton">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features">
+        <div class="feature">
+            <img src="./img/icon1.png" class="featureIcon" alt="Feature Icon">
+            <h2 class="featureTitle">Free Shipping</h2>
+            <p class="featureDescription">Enjoy free shipping on all orders.</p>
+        </div>
+        <div class="feature">
+            <img src="./img/icon2.png" class="featureIcon" alt="Feature Icon">
+            <h2 class="featureTitle">24/7 Support</h2>
+            <p class="featureDescription">We are here to help you anytime.</p>
+        </div>
+        <div class="feature">
+            <img src="./img/icon3.png" class="featureIcon" alt="Feature Icon">
+            <h2 class="featureTitle">Money Back Guarantee</h2>
+            <p class="featureDescription">Get a refund within 30 days.</p>
+        </div>
+    </div>
+
+    <!-- Product Section -->
+    <div class="product">
+        <img src="./img/air.png" class="productImage" alt="Product Image">
+        <div class="productDetails">
+            <h1 class="productTitle">AIR FORCE</h1>
+            <p class="productDescription">This is the best product for you.</p>
+            <h2 class="productPrice">$119</h2>
+            <div class="colors">
+                <div class="color" style="background-color: black;"></div>
+                <div class="color" style="background-color: darkblue;"></div>
+            </div>
+            <div class="sizes">
+                <div class="size">S</div>
+                <div class="size">M</div>
+                <div class="size">L</div>
+                <div class="size">XL</div>
+            </div>
+            <button class="productButton">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div class="payment">
+        <span class="close">X</span>
+        <h1 class="payTitle">Payment</h1>
+        <label for="name">Name on Card</label>
+        <input type="text" id="name" class="payInput" placeholder="John Doe">
+        <label for="card">Card Number</label>
+        <input type="text" id="card" class="payInput" placeholder="1111-2222-3333-4444">
+        <div class="cardInfo">
+            <div>
+                <label for="exp">Expiry Date</label>
+                <input type="text" id="exp" class="payInput small" placeholder="MM/YY">
+            </div>
+            <div>
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" class="payInput small" placeholder="123">
+            </div>
+        </div>
+        <div class="cardIcons">
+            <img src="./img/visa.png" class="cardIcon" alt="Visa">
+            <img src="./img/mastercard.png" class="cardIcon" alt="Mastercard">
+            <img src="./img/amex.png" class="cardIcon" alt="American Express">
+        </div>
+        <button class="payButton">Pay Now</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footerLeft">
+            <div>
+                <h3 class="footerMenuTitle">About Us</h3>
+                <ul class="footerMenuList">
+                    <li class="footerListItem">Company</li>
+                    <li class="footerListItem">Careers</li>
+                    <li class="footerListItem">Blog</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footerMenuTitle">Help</h3>
+                <ul class="footerMenuList">
+                    <li class="footerListItem">Customer Service</li>
+                    <li class="footerListItem">FAQs</li>
+                    <li class="footerListItem">Returns</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footerMenuTitle">Shop</h3>
+                <ul class="footerMenuList">
+                    <li class="footerListItem">Men</li>
+                    <li class="footerListItem">Women</li>
+                    <li class="footerListItem">Kids</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <input type="text" class="footerInput" placeholder="Your Email">
+            <button class="footerButton">Subscribe</button>
+            <div class="footerIcons">
+                <img src="./img/facebook.png" class="footerIcon" alt="Facebook">
+                <img src="./img/twitter.png" class="footerIcon" alt="Twitter">
+                <img src="./img/instagram.png" class="footerIcon" alt="Instagram">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
